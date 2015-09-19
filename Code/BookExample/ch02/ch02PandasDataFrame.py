@@ -69,9 +69,22 @@ agg_counts = by_tz_os.size().unstack().fillna(0)
 print(agg_counts[:10])
 #agg_counts[:10].plot(kind='barh',rot=0)
 #pylab.show()
- 
+print('\n')
 ###############################################################
 indexer = agg_counts.sum(1).argsort()
 print(indexer[:10])
-   
+print('\n')
+###############################################################
+count_subset = agg_counts.take(indexer)[-10:]
+print(count_subset)
+###############################################################
+#count_subset.plot(kind='barh',stacked = True)
+#pylab.show()
+###############################################################
+normed_subset = count_subset.div(count_subset.sum(1), axis=0)
+normed_subset.plot(kind='barh',stacked=True)
+pylab.show()
+
+
+
     
