@@ -26,9 +26,17 @@ def get_counts2(sequence):
         counts[x] += 1
     return counts
 
-records = [json.loads(line) for line in open(path)]
 
-print(records[0])
+#records = [json.loads(line) for line in open(path)] #return List
+
+for line in open(path):
+    records = []
+    #print(type(line),line)
+    records.append(json.loads(line))
+
+#print(type(records).records)
+
+print(type(records),records[0])
 print('\n')
 print(records[0]['a'])
 print(records[0]['tz'])
@@ -41,6 +49,7 @@ print(records[0]['hh'])
 print(records[0]['r'])
 print('\n')
 
+'''
 time_zones = [rec['tz'] for rec in records if 'tz' in rec]
 print(time_zones)
 print(time_zones[:10])
@@ -64,4 +73,4 @@ print(_hRecCount2)
 print(_hRecCount2['xaOGZY'])
 
 print('\n')
-
+'''
