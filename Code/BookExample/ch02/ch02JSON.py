@@ -51,7 +51,7 @@ print(_timezonesCounts)
 print(_timezonesCounts['America/New_York'])
 
 _hRec = [rec['h'] for rec in records if 'h' in rec]
-print(_hRec)
+print(type(_hRec),_hRec)
 _hRecCount = get_counts(_hRec)
 print(_hRecCount)
 print(_hRecCount['xaOGZY'])
