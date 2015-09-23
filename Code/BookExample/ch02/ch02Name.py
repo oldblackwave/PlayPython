@@ -132,10 +132,10 @@ diversity = diversity.unstack('sex')
 print(diversity)
 print('\n')
 print(diversity.head())
-diversity.plot()
+#diversity.plot(title = "Number of popular names in top 50%")
 print('\n')
 
-pylab.show()
+#pylab.show()
 ###############################################################
 
 
