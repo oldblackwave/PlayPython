@@ -145,6 +145,13 @@ table = names.pivot_table('births', last_letters, ['sex', 'year'],sum)
 print(table)
 print('\n')
 
+subtable = table.reindex(columns=[1910,1960,2010],level='year')
+print(subtable.head())
+print('\n')
+print(subtable.sum())
+print('\n')
+###############################################################
+
 
 
 
