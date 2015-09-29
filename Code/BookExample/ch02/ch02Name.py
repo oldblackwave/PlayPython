@@ -151,6 +151,44 @@ print('\n')
 print(subtable.sum())
 print('\n')
 ###############################################################
+letter_prop = subtable/subtable.sum().astype(float)
+print(letter_prop)
+fig, axes = plt.subplots(2, 1, figsize=(10,8))
+letter_prop['M'].plot(kind='bar', rot=0, ax=axes[0],title='Male')
+letter_prop['F'].plot(kind='bar', rot=0, ax=axes[1],title='Female', legend=False)
+#pylab.show()
+print('\n')
+###############################################################
+letter_prop = table/table.sum().astype(float)
+dny_ts = letter_prop.ix[['d','n','y'],'M'].T
+print(dny_ts.head())
+dny_ts.plot()
+#pylab.show()
+print('\n')
+###############################################################
+
+all_names = top1000.name.unique()
+mask = np.array(['lesl' in x.lower() for x in all_names])
+lesley_like = all_names[mask]
+print(lesley_like)
+print('\n')
+###############################################################
+
+filtered = top1000[top1000.name.isin(lesley_like)]
+print(filtered.groupby('name').births.sum())
+print('\n')
+
+###############################################################
+
+table = filtered.pivot_table('births','year','sex', aggfunc = 'sum')
+table = table.div(table.sum(1),axis=0)
+print(table.tail())
+table.plot(style={'M':'k-','F':'k--'})
+pylab.show()
+print('\n')
+
+
+
 
 
 
