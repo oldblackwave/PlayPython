@@ -1,4 +1,5 @@
 import numpy as np
+from numpy.matlib import randn
 
 arr2d = np.array([[1,2,3],[4,5,6],[7,8,9]])
 print(arr2d)
@@ -45,9 +46,25 @@ print('\n')
 ###############################################################
 
 #Page 92
+#Boolean Indexing
 
 ###############################################################
 
+names = np.array(['Bob', 'Joe', 'Will', 'Bob', 'Will', 'Joe', 'Joe'])
+data = randn(7,4)
+print(names)
+print(data)
+print('\n')
 
-
-
+print(names == 'Bob')
+print('\n')
+print(data[names == 'Bob'])
+print('\n')
+print(data[names == 'Bob',2:])
+print('\n')
+print(data[names == 'Bob',3])
+print('\n')
+print(names != 'Bob')
+print('\n')
+print(data[-(names == 'Bob')])
+print('\n')
