@@ -68,3 +68,16 @@ print(names != 'Bob')
 print('\n')
 print(data[-(names == 'Bob')])
 print('\n')
+
+mask = (names == 'Bob')|(names == 'Will')
+print(mask)
+print(data[mask])
+print('\n')
+
+data[data<0] = 0 
+print(data)
+print('\n')
+
+data[names != 'Joe'] = 7
+print(data)
+print('\n')
