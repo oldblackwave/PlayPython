@@ -43,7 +43,7 @@ print('\n')
 all_data = {}
 
 for ticker in ['AAPL', 'IBM', 'MSFT', 'GOOGL']:
-    all_data[ticker] = web.get_data_yahoo(ticker, '1/1/2010', '2/1/2010')
+    all_data[ticker] = web.get_data_yahoo(ticker, '10/1/2015', '10/11/2015')
 
 price = DataFrame({tic:data['Adj Close']
                             for tic, data in all_data.items()})
@@ -51,9 +51,36 @@ volume = DataFrame({tic:data['Volume']
                             for tic, data in all_data.items()})
 
 print(price)
+print('\n')
+print(volume)
+print('\n')
 
+returns = price.pct_change()
+print(returns.tail(10))
+
+print('\n')
+
+print(returns.MSFT.corr(returns.IBM))
+print(returns.MSFT.cov(returns.IBM))
+
+print('\n')
+
+print(returns.corr())
+print('\n')
+print(returns.cov())
+
+print('\n')
+
+print(returns.corrwith(returns.IBM))
+
+print('\n')
     
-    
+print(returns.corrwith(volume))
+
+###############################################################
+
+
+
     
     
     
