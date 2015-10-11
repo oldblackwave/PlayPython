@@ -42,26 +42,43 @@ frame = DataFrame({'b':[4,7,-3,2],
 print(frame)
 print(frame.sort_index(by='b'))
 print(frame.sort_index(by=['a','b']))
+print('\n')
+
+###############################################################
+
+obj = Series([7,-5,7,4,2,0,4])
+print(obj)
+print(obj.rank())
+print(obj.rank(method='first'))
+print(obj.rank(ascending=False, method='max'))
+print('\n')
+
+frame = DataFrame({'b':[4.3,7,-3,2],'a':[0,1,0,1],'c':[-2,5,8,-2.5]})
+
+print(frame)
+print(frame.rank())
+print(frame.rank(axis=1))
+
+print('\n')
+
+###############################################################
+
+obj = Series(range(5),index=['a','a','b','b','c'])
+print(obj)
+print(obj.index.is_unique)
+
+print('\n')
+
+print(obj['a'])
+print(obj['c'])
+
+###############################################################
 
 
+df = DataFrame(np.random.randn(4,3), index=['a','a','b','b'])
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print(df)
+print(df.ix['b'])
 
 print('\n')
 
