@@ -123,6 +123,55 @@ print('\n')
 
 #page 154
 
+frame = DataFrame(np.arange(12).reshape((4,3)),
+                  index = [['a','a','b','b'],[1,2,1,2]],
+                  columns = [['Ohio', 'Ohio', 'Colorado'],['Green','Red','Green']]
+                  )
+
+print(frame)
+print('\n')
+
+frame.index.names = ['key1', 'key2']
+frame.columns.names = ['state', 'color']
+
+print(frame)
+print('\n')
+
+###############################################################
+
+'''
+MultiIndex.from_arrays([['Ohio','Ohio','Colorado'],['Green','Red','Green']],
+                        names = ['state','color'])
+'''
+###############################################################
+
+print(frame.swaplevel('key1', 'key2'))
+print('\n')
+print(frame.sortlevel(1))
+print('\n')
+print(frame.sortlevel(0))
+print('\n')
+print(frame.swaplevel(0, 1).sortlevel(0))
+print('\n')
+
+###############################################################
+
+print(frame.sum(level='key2'))
+print('\n')
+print(frame.sum(level='color',axis=1))
+print('\n')
+
+###############################################################
+
+
+
+
+
+
+
+
+
+
 
 
 
