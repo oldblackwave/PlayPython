@@ -27,11 +27,12 @@ print('\n')
 
 ###############################################################
 
-stacked = pdata.ix[:,:'9/5/2015',:].to_frame()
+stacked = pdata.ix[:,'9/25/2015':,:].to_frame()
 print(stacked)
 print('\n')
 
-#print(stacked.to_panel)
+print('Back TO Panel \n')
+print(stacked.to_panel())
 
 
 
