@@ -93,7 +93,12 @@ print(data)
 
 print('\n')
 
-data.to_csv(sys.stdout, sep='|')
+print(data.to_csv(sys.stdout, sep='|'))
+
+print('\n')
+
+print(data.to_csv(sys.stdout, na_rep='NULL'))
+
 
 
 
