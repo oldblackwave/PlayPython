@@ -99,6 +99,39 @@ print('\n')
 
 print(data.to_csv(sys.stdout, na_rep='NULL'))
 
+print('\n')
+
+print(data.to_csv(sys.stdout, index=False, header=False))
+
+print('\n')
+
+print(data.to_csv(sys.stdout, index=False, col=['a','b','c']))
+
+print('\n')
+
+dates = pd.date_range('1/1/2000', periods=7)
+ts = Series(np.arange(7), index=dates)
+
+ts.to_csv('data/tseries.csv')
+
+print('\n')
+
+print(Series.from_csv('data/tseries.csv', parse_dates=True))
+
+print('\n')
+
+
+
+
+
+
+
+print('\n')
+
+
+
+
+
 
 
 
