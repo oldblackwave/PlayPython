@@ -14,6 +14,8 @@ from numpy import NaN as NA
 from lxml.html import parse
 from urllib.request import urlopen
 from lxml import objectify
+from io import StringIO
+
 
 ###############################################################
 
@@ -35,6 +37,15 @@ for elt in root:
     
 perf = DataFrame(data)
 print(perf)
+print('\n')
 
+###############################################################
+
+tag = '<a href="http://www.google.com">Google</a>'
+root = objectify.parse(StringIO(tag)).getroot()
+
+print(root)
+print(root.get('href'))
+print(root.text)
 
 
