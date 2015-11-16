@@ -33,6 +33,8 @@ print(pd.merge(df1,df2))
 print('\n')
 
 print(pd.merge(df1,df2,on='key'))
+print('\n')
+
 
 
 
