@@ -35,7 +35,20 @@ print('\n')
 print(pd.merge(df1,df2,on='key'))
 print('\n')
 
+###############################################################
 
+df3 = DataFrame({'lkey':['b','b','a','c','a','a','b'],
+                'data1':range(7)})
+
+df4 = DataFrame({'rkey':['a','b','d'],
+                 'data2':range(3)})
+
+print(df3)
+print('\n')
+print(df4)
+print('\n')
+
+pd.merge(df3)
 
 
 
