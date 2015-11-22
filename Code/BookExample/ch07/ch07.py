@@ -86,6 +86,10 @@ print(right)
 print('\n')
 print(pd.merge(left,right, on=['key1','key2'], how='outer'))
 print('\n')
+print(pd.merge(left, right, on='key1'))
+print('\n')
+print(pd.merge(left, right, on='key1', suffixes=('_left', '_right')))
+print('\n')
 
 
 
