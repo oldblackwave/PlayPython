@@ -48,7 +48,11 @@ print('\n')
 print(df4)
 print('\n')
 
-pd.merge(df3)
+print(pd.merge(df3, df4, left_on='lkey', right_on='rkey'))
+
+
+
+
 
 
 
