@@ -40,6 +40,24 @@ righth = DataFrame(np.arange(12).reshape((6,2)),
                    index=[['Nevada','Nevada','Ohio','Ohio','Ohio','Ohio'],[2001,2000,2000,2000,2001,2002]],
                    columns=['event1','event2'])
 
+print(lefth)
+print(righth)
+print('\n')
+
+print(pd.merge(lefth, righth, left_on=['key1','key2'], right_index=True))
+print('\n')
+print(pd.merge(lefth, righth, left_on=['key1','key2'], right_index=True, how='outer'))
+print('\n')
+
+left2 = DataFrame([[1.,2.],[3.,4.],[5.,6.]], index=['a','c','e'],columns=['Ohio','Nevada'])
+right2 = DataFrame([[7.,8.],[9.,10.],[11.,12.],[13,14]],
+                   index = ['b','c','d','e'], columns=['Missouri','Alabama'])
+
+print(left2)
+print(right2)
+print('\n')
+
+
 
 
 
