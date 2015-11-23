@@ -57,6 +57,26 @@ print(left2)
 print(right2)
 print('\n')
 
+print(pd.merge(left2, right2, how='outer', left_index=True, right_index=True))
+
+print('\n')
+
+print(left2.join(right2,how='outer'))
+
+print('\n')
+
+print(left1.join(right1, on='key'))
+
+print('\n')
+
+another = DataFrame([[7.,8.],[9.,10.],[11.,12.],[16.,17.]],
+                    index=['a','c','e','f'], columns=['New York','Oregon'])
+print(another)
+print('\n')
+print(left2.join([right2,another]))
+print(left2.join([right2,another], how='outer'))
+print('\n')
+
 
 
 
