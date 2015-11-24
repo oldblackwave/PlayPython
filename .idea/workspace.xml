@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="405ed6f6-8c08-4b8c-8353-8878c920b7c1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Code/BookExample/ch07/ch07CBS.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Code/BookExample/ch07/ch07double.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/BookExample/ch07/ch07IndexJoin.py" afterPath="$PROJECT_DIR$/Code/BookExample/ch07/ch07IndexJoin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/BookExample/ch07/ch07double.py" afterPath="$PROJECT_DIR$/Code/BookExample/ch07/ch07double.py" />
     </list>
     <ignored path="PlayPython.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,8 +63,8 @@
       <file leaf-file-name="ch07double.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Code/BookExample/ch07/ch07double.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8018349">
-              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.89541286">
+              <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -136,7 +134,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -197,6 +194,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -205,7 +203,7 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Python.ch07CBS">
+  <component name="RunManager" selected="Python.ch07double">
     <configuration default="false" name="ch07" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -253,6 +251,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="PlayPython" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Code/BookExample/ch07/ch07CBS.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ch07double" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Code/BookExample/ch07" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="PlayPython" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Code/BookExample/ch07/ch07double.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -379,16 +394,18 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Python.ch07" />
       <item index="1" class="java.lang.String" itemvalue="Python.ch07IndexJoin" />
       <item index="2" class="java.lang.String" itemvalue="Python.ch07CBS" />
+      <item index="3" class="java.lang.String" itemvalue="Python.ch07double" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.ch07CBS" />
-        <item index="1" class="java.lang.String" itemvalue="Python.ch07IndexJoin" />
-        <item index="2" class="java.lang.String" itemvalue="Python.ch07" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Python.ch07double" />
+        <item index="1" class="java.lang.String" itemvalue="Python.ch07CBS" />
+        <item index="2" class="java.lang.String" itemvalue="Python.ch07IndexJoin" />
+        <item index="3" class="java.lang.String" itemvalue="Python.ch07" />
       </list>
     </recent_temporary>
   </component>
@@ -457,6 +474,46 @@
     <entry file="file://$PROJECT_DIR$/Code/BookExample/ch07/ch07IndexJoin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/BookExample/ch07/ch07CBS.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/BookExample/ch07/ch07double.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/BookExample/ch07/ch07.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/BookExample/ch07/ch07IndexJoin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
@@ -496,8 +553,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Code/BookExample/ch07/ch07double.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8018349">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.89541286">
+          <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
