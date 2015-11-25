@@ -82,6 +82,16 @@ print('\n')
 
 df = DataFrame({'left':result, 'right':result+5},columns=pd.Index(['left','right'], name='side'))
 
+print(df)
+print('\n')
+print(df.unstack('state'))
+print(df.unstack('state').stack('side'))
+print('\n')
+
+print(data[:10])
+print('\n')
+
+
 
 
 
