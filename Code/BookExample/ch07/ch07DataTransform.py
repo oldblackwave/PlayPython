@@ -72,5 +72,26 @@ print('\n')
 data = DataFrame(np.arange(12).reshape((3,4)),
                  index=['Ohio','Colorado','New York'],
                  columns=['one','two','three','four'])
+print(data)
+print('\n')
+
+print(data.index.map(str.upper))
+print('\n')
+
+data.index = data.index.map(str.upper)
+print(data)
+print('\n')
+
+print(data.rename(index=str.title, columns=str.upper))
+print('\n')
+
+print(data.rename(index={'OHIO':'INDIANA'},columns={'three':'peekaboo'}))
+print('\n')
+
+_ = data.rename(index={'OHIO':'INDIANA'}, inplace=True)
+print(data)
+
+print('\n')
+
 
 
