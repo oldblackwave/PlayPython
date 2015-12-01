@@ -58,6 +58,37 @@ print('\n')
 ###############################################################
 
 mnames = ['moive_id', 'title', 'genres']
-moives = pd.read_table('data/moives.dat', sep='::', header=None, names=mnames)
+moives = pd.read_table('data/movies.dat', sep='::', header=None, names=mnames)
+
+print(moives[:10])
+print('\n')
+
+genre_iter = (set(x.split('|')) for x in moives.genres)
+genres = sorted(set.union(*genre_iter))
+
+dummies = DataFrame(np.zeros((len(moives), len(genres))), columns=genres)
+
+for i, gen in enumerate(moives.genres):
+    dummies.ix[i, gen.split('|')] = 1
+
+moives_windic = moives.join(dummies.add_prefix('Genre_'))
+
+print(moives_windic.ix[0])
+
+print('\n')
+
+
+values = np.random.rand(10)
+
+print(values)
+
+bins = [0,0.2,0.4,0.6,0.8,1]
+print(pd.get_dummies(pd.cut(values,bins)))
+
+print('\n')
+
+
+
+
 
 
