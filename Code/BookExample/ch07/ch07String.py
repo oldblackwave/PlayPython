@@ -5,6 +5,7 @@ import sys
 import csv
 import json
 import urllib
+import re
 
 import pandas.io.data as web
 
@@ -43,4 +44,6 @@ print(val.replace(',',''))
 print('\n')
 
 ###############################################################
+
+text = "foo   bar\t baz   \tqux"
 
