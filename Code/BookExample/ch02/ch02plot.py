@@ -10,3 +10,5 @@ from numpy import arange
 plt.plot(arange(21))
 pylab.show()
 
+print('nice')
+
